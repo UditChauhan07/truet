@@ -22,10 +22,7 @@
       content="Discover the only AI-powered sales enablement platform that surfaces personalized answers, content, and training where your reps work. Trusted by thousands."
       property="og:description"
     />
-    <meta
-      content="/image/truet-logo.svg"
-      property="og:image"
-    />
+    <meta content="/image/truet-logo.svg" property="og:image" />
     <meta
       content="AI That Understands. Sales That Convert. | Truet"
       property="twitter:title"
@@ -34,10 +31,7 @@
       content="Discover the only AI-powered sales enablement platform that surfaces personalized answers, content, and training where your reps work. Trusted by thousands."
       property="twitter:description"
     />
-    <meta
-      content="/image/truet-logo.svg"
-      property="twitter:image"
-    />
+    <meta content="/image/truet-logo.svg" property="twitter:image" />
     <meta property="og:type" content="website" />
     <meta content="summary_large_image" name="twitter:card" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -60,6 +54,90 @@
       type="text/javascript"
     ></script>
   </head>
+
+  <style>
+    @keyframes gradientAnimation {
+  50% {
+    background-position: 100% 20%;
+  }
+  50% {
+    background-position: 100% 20%;
+  }
+  100% {
+    background-position: 0% 100%%;
+  }
+}
+
+.StripeHomepageHeroGradient {
+  animation: gradientAnimation 5s linear infinite;
+  width: 100%;
+  height: 800px;
+  --gradientColorZero: #a960ee;
+  --gradientColorOne: #ff333d;
+  --gradientColorTwo: #90e0ff;
+  --gradientColorThree: #ffcb57;
+  --gradientColorZeroTransparent: rgba(169, 96, 238, 0);
+  --gradientColorOneTransparent: rgba(255, 51, 61, 0);
+  --gradientColorTwoTransparent: rgba(144, 224, 255, 0);
+  --gradientColorThreeTransparent: rgba(255, 203, 87, 0);
+  --gradientAngle: var(--angleStrong);
+  --gradientHeight: calc(
+    100% + var(--sectionPaddingTop) + var(--transformOriginX) *
+      var(--sectionAngleSin)
+  );
+  --offsetX: var(--gutterWidth);
+  --transformOriginX: -60px;
+  --sectionAngleSin: var(--angleStrongSin);
+  position: absolute;
+  bottom: 0;
+  top: auto;
+  left: calc(var(--offsetX) * -1);
+  /*transform-origin: var(--transformOriginX) 100%;*/
+  transform: skewY(-12deg);
+  overflow: hidden;
+  border: none;
+
+  background: radial-gradient(
+        var(--gradientColorThree) 23%,
+        var(--gradientColorThreeTransparent) 67% 100%
+      )
+      385px -24px,
+    radial-gradient(
+        var(--gradientColorOne) 0,
+        var(--gradientColorOneTransparent) 60% 100%
+      ) -940px 290px,
+    radial-gradient(
+        var(--gradientColorTwo) 10%,
+        var(--gradientColorTwoTransparent) 60% 100%
+      ) -120px 250px,
+    radial-gradient(
+        var(--gradientColorOne) 40%,
+        var(--gradientColorOneTransparent) 57% 100%
+      )
+      495px -44px,
+    radial-gradient(
+        var(--gradientColorZero) 30%,
+        var(--gradientColorZeroTransparent) 67% 100%
+      )
+      122px -120px,
+    radial-gradient(
+        var(--gradientColorZero) 10%,
+        var(--gradientColorZeroTransparent) 60% 100%
+      ) -420px 120px,
+    radial-gradient(
+        var(--gradientColorTwo) 15%,
+        var(--gradientColorTwoTransparent) 50% 100%
+      ) -620px 0,
+    radial-gradient(
+        var(--gradientColorTwo) 25%,
+        var(--gradientColorTwoTransparent) 50% 100%
+      )
+      520px -250px,
+    var(--gradientColorZero);
+  background-repeat: repeat-y;
+}
+
+  </style>
 
   <body>
     <div class="w-embed w-iframe"></div>
@@ -1245,18 +1323,21 @@ a,
             }
           </style>
         </div>
+        <section>
+          <div class="linear gradient skew">
+            
+            <div class="StripeHomepageHeroGradient"></div>
+          </div>
+        </section>
         <section class="section_hero_primary">
           <div class="hero_primary_wrapper">
+            <!-- <div class="infinity"></div> -->
             <div class="hero_primary_content_wrapper">
               <div class="hero_primary_content">
                 <div class="hero_primary_content_header">
                   <div class="headline_callout_main is-relative">
                     <div class="headline_callout_icon_container">
-                      <img
-                        src="https://cdn.prod.website-files.com/652972dbf17aca5ff350c363/6720deff19dfd9c5b3a080f6_icon_ai_powered.svg"
-                        loading="lazy"
-                        alt=""
-                      />
+                      <img src="/image/ai-powered.svg" loading="lazy" alt="" />
                     </div>
                     <div class="u-text-style-overline">Truet AI</div>
                   </div>
@@ -1354,7 +1435,7 @@ a,
                     <div class="feature_callout_item">
                       <div class="feature_callout_icon_container">
                         <img
-                          src="https://cdn.prod.website-files.com/652972dbf17aca5ff350c363/671fe4fb5aa48afe23872426_icon_ai_rec.svg"
+                          src="/image/right-knowledge.svg"
                           loading="lazy"
                           alt=""
                         />
@@ -1364,7 +1445,7 @@ a,
                     <div class="feature_callout_item">
                       <div class="feature_callout_icon_container">
                         <img
-                          src="https://cdn.prod.website-files.com/652972dbf17aca5ff350c363/671fe4fbf2ba246c35657b5d_icon_jit.svg"
+                          src="/image/Just-in-time.svg"
                           loading="lazy"
                           alt=""
                         />
@@ -1374,7 +1455,7 @@ a,
                     <div class="feature_callout_item">
                       <div class="feature_callout_icon_container">
                         <img
-                          src="https://cdn.prod.website-files.com/652972dbf17aca5ff350c363/671fe4fb40054316b3a9b9bd_icon_rep_inanytool.svg"
+                          src="/image/Real Time Insights.svg"
                           loading="lazy"
                           alt=""
                         />
@@ -1416,6 +1497,7 @@ a,
           </div>
           <div class="placeholder-shape-blur"></div>
         </section>
+        
         <section class="section_logo_bar">
           <div class="logo_bar_header_container">
             <h2 class="is_h5">Trusted by Top Sales Teams</h2>
@@ -1462,42 +1544,30 @@ a,
         <section class="section_video">
           <div
             id="video-container"
-            data-video-url="https://player.vimeo.com/video/1040117733?badge=0&amp;amp;autopause=0&amp;amp;player_id=0&amp;amp;app_id=58479"
+            data-video-url="/image/Truet-AI-StoryBorad.mp4"
             class="video-container homepage_video w-node-_4c5e1d7b-e43f-3dc0-54d1-ee120293fd5c-687ba053"
           >
-            <img
-              src="/image/truet-logo.svg"
+            <!-- <video controls
+              source="/image/Truet-AI-StoryBorad.mp4"
               loading="lazy"
               sizes="(max-width: 991px) 100vw, 940px"
               srcset="
-              /image/truet-logo.svg   500w,
-              /image/truet-logo.svg   800w,
-              /image/truet-logo.svg 1080w,
-              /image/truet-logo.svg        1200w
+              /image/Truet-AI-StoryBorad.mp4   500w,
+              /image/Truet-AI-StoryBorad.mp4   800w,
+              /image/Truet-AI-StoryBorad.mp4 1080w,
+              /image/Truet-AI-StoryBorad.mp4        1200w
               "
               alt=""
               id="video-thumbnail"
               class="video_thumbnail"
-            />
-            <div class="video_icon w-embed">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                aria-hidden="true"
-                role="img"
-                class="iconify iconify--ic"
-                width="100%"
-                height="100%"
-                preserveAspectRatio="xMidYMid meet"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="currentColor"
-                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zM9.5 14.67V9.33c0-.79.88-1.27 1.54-.84l4.15 2.67a1 1 0 0 1 0 1.68l-4.15 2.67c-.66.43-1.54-.05-1.54-.84z"
-                ></path>
-              </svg>
-            </div>
-            <div class="video_overlay"></div>
+            /> -->
+            <video id="video-thumbnail" class="video_thumbnail" controls>
+              <source src="/image/Truet-AI-StoryBorad.mp4" type="video/mp4">
+              <source src="/image/Truet-AI-StoryBorad.webm" type="video/webm">
+              <source src="/image/Truet-AI-StoryBorad.ogv" type="video/ogg">              
+            </video>          
+           
+            
           </div>
           <div class="video_player_blur_bg"></div>
         </section>
@@ -1517,11 +1587,7 @@ a,
               >
                 <div class="headline_callout_main is-relative">
                   <div class="headline_callout_icon_container">
-                    <img
-                      src="https://cdn.prod.website-files.com/652972dbf17aca5ff350c363/67222d533beb180ce95307d9_icon_person.svg"
-                      loading="lazy"
-                      alt=""
-                    />
+                    <img src="/image/AI Enablement.svg" loading="lazy" alt="" />
                   </div>
                   <div class="u-text-style-overline">
                     Centralized Knowledge, Delivered Instantly
@@ -2196,11 +2262,7 @@ a,
               >
                 <div class="headline_callout_main is-relative">
                   <div class="headline_callout_icon_container">
-                    <img
-                      src="https://cdn.prod.website-files.com/652972dbf17aca5ff350c363/67222d533beb180ce95307d9_icon_person.svg"
-                      loading="lazy"
-                      alt=""
-                    />
+                    <img src="/image/AI Enablement.svg" loading="lazy" alt="" />
                   </div>
                   <div class="u-text-style-overline">Centralize content</div>
                 </div>
@@ -2318,7 +2380,7 @@ a,
                         <div class="ui_device_spekit_app_header_left">
                           <img
                             loading="lazy"
-                            src="https://cdn.prod.website-files.com/652972dbf17aca5ff350c363/67354ca10236c589e5a0e0b5_logo-spekit-wordmark.svg"
+                            src="/image/truet-logo.svg"
                             alt=""
                             class="ui_device_spekit_app_logo"
                           />
@@ -2871,11 +2933,7 @@ a,
               >
                 <div class="headline_callout_main is-relative">
                   <div class="headline_callout_icon_container">
-                    <img
-                      src="https://cdn.prod.website-files.com/652972dbf17aca5ff350c363/67222d533beb180ce95307d9_icon_person.svg"
-                      loading="lazy"
-                      alt=""
-                    />
+                    <img src="/image/AI Enablement.svg" loading="lazy" alt="" />
                   </div>
                   <div class="u-text-style-overline">
                     Instant Answers, Smarter Selling
@@ -2954,7 +3012,7 @@ a,
                         <div class="ui_device_browser_header_tab">
                           <div class="ui_device_browser_tab gong_tab">
                             <img
-                              src="/image/favicon.png"
+                              src="/image/goong.svg"
                               loading="lazy"
                               alt=""
                               class="browser_logo"
@@ -2965,7 +3023,7 @@ a,
                             class="ui_device_browser_tab inactive salesforce_tab"
                           >
                             <img
-                              src="/image/favicon.png"
+                              src="/image/salesforce-favicon.png"
                               loading="lazy"
                               alt=""
                               class="browser_logo"
@@ -3016,7 +3074,7 @@ a,
                         <div class="ui_spekit_app_ext_rec_container">
                           <div class="ui_spekit_app_ext_container">
                             <img
-                              src="https://cdn.prod.website-files.com/652972dbf17aca5ff350c363/67361a3aedfd8e386848a95d_logo-spekit-logomark.png"
+                              src="/image/favicon-white.svg"
                               loading="lazy"
                               alt=""
                               class="ui_spekit_app_ext_emblem"
@@ -3026,9 +3084,10 @@ a,
                             <div class="ui_spekit_app_recommendation_header">
                               <div class="ui_spekit_app_primary_header">
                                 <img
-                                  src="https://cdn.prod.website-files.com/652972dbf17aca5ff350c363/67354ca10236c589e5a0e0b5_logo-spekit-wordmark.svg"
+                                  src="/image/truet-logo.svg"
                                   loading="lazy"
                                   alt=""
+                                  width="25%"
                                   class="ui_spekit_app_recommendation_logo"
                                 />
                                 <div class="ui_spekit_app_primary_header_right">
@@ -3283,7 +3342,7 @@ a,
                       </div>
                       <div class="ui_spekit_viewport_container_salesforce">
                         <img
-                          src="https://cdn.prod.website-files.com/652972dbf17aca5ff350c363/674f5c05707ed688b9bcac46_selling_to_cro_spek_ui.png"
+                          src="/image/Selling-truet-ui.png"
                           loading="lazy"
                           alt=""
                           class="ui_spekit_spek_placeholder"
@@ -3321,9 +3380,10 @@ a,
                           <div class="ui_spekit_app_recommendation_header">
                             <div class="ui_spekit_app_primary_header">
                               <img
-                                src="https://cdn.prod.website-files.com/652972dbf17aca5ff350c363/67354ca10236c589e5a0e0b5_logo-spekit-wordmark.svg"
+                                src="/image/truet-logo.svg"
                                 loading="lazy"
                                 alt=""
+                                width="25%"
                                 class="ui_spekit_app_recommendation_logo"
                               />
                               <div class="ui_spekit_app_primary_header_right">
@@ -3461,11 +3521,7 @@ a,
               >
                 <div class="headline_callout_main is-relative">
                   <div class="headline_callout_icon_container">
-                    <img
-                      src="https://cdn.prod.website-files.com/652972dbf17aca5ff350c363/67222d533beb180ce95307d9_icon_person.svg"
-                      loading="lazy"
-                      alt=""
-                    />
+                    <img src="/image/AI Enablement.svg" loading="lazy" alt="" />
                   </div>
                   <div class="u-text-style-overline">
                     AutoMAGICALLY surface answers
@@ -3555,7 +3611,7 @@ a,
                           >
                             <img
                               loading="lazy"
-                              src="/image/favicon.png"
+                              src="/image/salesforce-favicon.png"
                               alt=""
                               class="browser_logo"
                             />
@@ -3606,7 +3662,7 @@ a,
                           <div class="ui_spekit_app_ext_container">
                             <img
                               loading="lazy"
-                              src="https://cdn.prod.website-files.com/652972dbf17aca5ff350c363/67361a3aedfd8e386848a95d_logo-spekit-logomark.png"
+                              src="/image/favicon.png"
                               alt=""
                               class="ui_spekit_app_ext_emblem"
                             />
@@ -3616,8 +3672,9 @@ a,
                               <div class="ui_spekit_app_primary_header">
                                 <img
                                   loading="lazy"
-                                  src="https://cdn.prod.website-files.com/652972dbf17aca5ff350c363/67354ca10236c589e5a0e0b5_logo-spekit-wordmark.svg"
+                                  src="/image/truet-logo.svg"
                                   alt=""
+                                  width="25%"
                                   class="ui_spekit_app_recommendation_logo"
                                 />
                                 <div class="ui_spekit_app_primary_header_right">
@@ -3911,8 +3968,9 @@ a,
                             <div class="ui_spekit_app_primary_header">
                               <img
                                 loading="lazy"
-                                src="https://cdn.prod.website-files.com/652972dbf17aca5ff350c363/67354ca10236c589e5a0e0b5_logo-spekit-wordmark.svg"
+                                src="/image/truet-logo.svg"
                                 alt=""
+                                width="25%"
                                 class="ui_spekit_app_recommendation_logo"
                               />
                               <div class="ui_spekit_app_primary_header_right">
@@ -4050,11 +4108,7 @@ a,
               >
                 <div class="headline_callout_main is-relative">
                   <div class="headline_callout_icon_container">
-                    <img
-                      src="https://cdn.prod.website-files.com/652972dbf17aca5ff350c363/67222d533beb180ce95307d9_icon_person.svg"
-                      loading="lazy"
-                      alt=""
-                    />
+                    <img src="/image/AI Enablement.svg" loading="lazy" alt="" />
                   </div>
                   <div class="u-text-style-overline">
                     Drive Change at the Speed of Sales
@@ -4189,7 +4243,7 @@ a,
                           </div>
                           <div class="ui_device_browser_tab inactive">
                             <img
-                              src="/image/favicon.png"
+                              src="/image/salesforce-favicon.png"
                               loading="lazy"
                               alt=""
                               class="browser_logo"
@@ -4215,7 +4269,7 @@ a,
                         <div class="ui_device_spekit_app_header">
                           <div class="ui_device_spekit_app_header_left">
                             <img
-                              src="https://cdn.prod.website-files.com/652972dbf17aca5ff350c363/67354ca10236c589e5a0e0b5_logo-spekit-wordmark.svg"
+                              src="/image/truet-logo.svg"
                               loading="lazy"
                               alt=""
                               class="ui_device_spekit_app_logo"
@@ -4360,7 +4414,7 @@ a,
                           <div class="ui_spekit_app_spek_content_container">
                             <div class="ui_spekit_app_spek_headline">
                               <div class="ui_spek_app_spek_headline_text">
-                                Create Spek
+                                Create Guide
                               </div>
                               <div class="ui_spekit_app_spek_headline_right">
                                 <img
@@ -4423,7 +4477,7 @@ a,
                                       <div
                                         class="ui_spekit_app_spek_ai_title_text"
                                       >
-                                        Enter Spek title
+                                        Enter Guide title
                                       </div>
                                     </div>
                                     <div
@@ -4441,7 +4495,7 @@ a,
                                   </div>
                                 </div>
                                 <div class="ui_spekit_app_spek_title_help_text">
-                                  Do you want to embed this Spek?
+                                  Do you want to embed this Guide?
                                 </div>
                               </div>
                               <img
@@ -4869,7 +4923,7 @@ a,
                             alt=""
                             class="ui_spekit_app_rep_image"
                           /><img
-                            src="https://cdn.prod.website-files.com/652972dbf17aca5ff350c363/6736353845faadab3dca94ce_Vectors-Wrapper.svg"
+                            src="/image/Truet-Icon-rounded.png"
                             loading="lazy"
                             width="29"
                             height="29"
@@ -4990,11 +5044,7 @@ a,
               >
                 <div class="headline_callout_main is-relative">
                   <div class="headline_callout_icon_container">
-                    <img
-                      src="https://cdn.prod.website-files.com/652972dbf17aca5ff350c363/67222d533beb180ce95307d9_icon_person.svg"
-                      loading="lazy"
-                      alt=""
-                    />
+                    <img src="/image/AI Enablement.svg" loading="lazy" alt="" />
                   </div>
                   <div class="u-text-style-overline">
                     Drive Change at the Speed of Sales
@@ -5129,7 +5179,7 @@ a,
                           <div class="ui_device_browser_tab inactive">
                             <img
                               loading="lazy"
-                              src="/image/favicon.png"
+                              src="/image/salesforce-favicon.png"
                               alt=""
                               class="browser_logo"
                             />
@@ -5155,7 +5205,7 @@ a,
                           <div class="ui_device_spekit_app_header_left">
                             <img
                               loading="lazy"
-                              src="https://cdn.prod.website-files.com/652972dbf17aca5ff350c363/67354ca10236c589e5a0e0b5_logo-spekit-wordmark.svg"
+                              src="/image/truet-logo.svg"
                               alt=""
                               class="ui_device_spekit_app_logo"
                             />
@@ -5299,7 +5349,7 @@ a,
                           <div class="ui_spekit_app_spek_content_container">
                             <div class="ui_spekit_app_spek_headline">
                               <div class="ui_spek_app_spek_headline_text">
-                                Create Spek
+                                Create Guide
                               </div>
                               <div class="ui_spekit_app_spek_headline_right">
                                 <img
@@ -5341,7 +5391,7 @@ a,
                                     <div class="ui_spekit_app_spek_title_label">
                                       <span
                                         class="ui_spekit_app_spek_title_label-0"
-                                        >Spek title</span
+                                        >Guide title</span
                                       ><span
                                         class="ui_spekit_app_spek_title_label-1"
                                       >
@@ -5362,7 +5412,7 @@ a,
                                       <div
                                         class="ui_spekit_app_spek_ai_title_text"
                                       >
-                                        Enter Spek title
+                                        Enter Guide title
                                       </div>
                                     </div>
                                     <div
@@ -5380,7 +5430,7 @@ a,
                                   </div>
                                 </div>
                                 <div class="ui_spekit_app_spek_title_help_text">
-                                  Do you want to embed this Spek?
+                                  Do you want to embed this Guide?
                                 </div>
                               </div>
                               <img
@@ -5917,18 +5967,14 @@ a,
           <div class="section_spekit_ai_container u-container">
             <div class="spekit_ai_headline">
               <img
-                src="https://cdn.prod.website-files.com/652972dbf17aca5ff350c363/671fe4fb5aa48afe23872426_icon_ai_rec.svg"
+                src="/image/ai-powered.svg"
                 loading="lazy"
                 alt=""
                 class="spekit_ai_section_icon"
               />
               <div class="headline_callout_main is-relative">
                 <div class="headline_callout_icon_container">
-                  <img
-                    src="https://cdn.prod.website-files.com/652972dbf17aca5ff350c363/67222d533beb180ce95307d9_icon_person.svg"
-                    loading="lazy"
-                    alt=""
-                  />
+                  <img src="/image/AI Enablement.svg" loading="lazy" alt="" />
                 </div>
                 <div class="u-text-style-overline">AI-Powered Enablement</div>
               </div>
@@ -5992,7 +6038,7 @@ a,
                 <div class="spekit_ai_content_card_header_container">
                   <div class="div-block-5">
                     <img
-                      src="https://cdn.prod.website-files.com/652972dbf17aca5ff350c363/6745d2866776485bf1ad7507_ico-analyst.svg"
+                      src="/image/Intelligent-cur.svg"
                       loading="lazy"
                       alt=""
                       class="spekit_ai_content_icon"
@@ -6005,7 +6051,7 @@ a,
                 <div class="div-block-8">
                   <div class="div-block-7 move_up_bottom">
                     <img
-                      src="https://cdn.prod.website-files.com/652972dbf17aca5ff350c363/674e69b98d3c5c06545597fa_icon_ai_assist_gradient.svg"
+                      src="./image/AI.svg"
                       loading="lazy"
                       alt=""
                       class="spekit_ai_content_bullet_icon"
@@ -6025,7 +6071,7 @@ a,
                   </div>
                   <div class="div-block-7">
                     <img
-                      src="https://cdn.prod.website-files.com/652972dbf17aca5ff350c363/674e69b98d3c5c06545597fa_icon_ai_assist_gradient.svg"
+                      src="./image/AI.svg"
                       loading="lazy"
                       alt=""
                       class="spekit_ai_content_bullet_icon"
@@ -6046,7 +6092,7 @@ a,
                 <div class="spekit_ai_content_card_header_container">
                   <div class="div-block-5">
                     <img
-                      src="https://cdn.prod.website-files.com/652972dbf17aca5ff350c363/6745d286296fdde53257400d_ico-twined-circles.svg"
+                      src="/image/Intelligent-cur-Right.svg"
                       loading="lazy"
                       alt=""
                       class="spekit_ai_content_icon"
@@ -6059,7 +6105,7 @@ a,
                 <div class="div-block-8">
                   <div class="div-block-7 move_down_bottom">
                     <img
-                      src="https://cdn.prod.website-files.com/652972dbf17aca5ff350c363/674e69b98d3c5c06545597fa_icon_ai_assist_gradient.svg"
+                      src="./image/AI.svg"
                       loading="lazy"
                       alt=""
                       class="spekit_ai_content_bullet_icon"
@@ -6078,7 +6124,7 @@ a,
                   </div>
                   <div class="div-block-7">
                     <img
-                      src="https://cdn.prod.website-files.com/652972dbf17aca5ff350c363/674e69b98d3c5c06545597fa_icon_ai_assist_gradient.svg"
+                      src="./image/AI.svg"
                       loading="lazy"
                       alt=""
                       class="spekit_ai_content_bullet_icon"
@@ -6108,11 +6154,7 @@ a,
             >
               <div class="headline_callout_main is-relative">
                 <div class="headline_callout_icon_container">
-                  <img
-                    src="https://cdn.prod.website-files.com/652972dbf17aca5ff350c363/67222d533beb180ce95307d9_icon_person.svg"
-                    loading="lazy"
-                    alt=""
-                  />
+                  <img src="/image/AI Enablement.svg" loading="lazy" alt="" />
                 </div>
                 <div class="u-text-style-overline">The Truet Difference</div>
               </div>
